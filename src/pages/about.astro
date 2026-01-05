@@ -1,0 +1,13 @@
+---
+import Layout from "../layouts/Layout.astro";
+import Hero from "../components/commons/hero/hero.astro";
+import AboutMe from "../components/about/aboutMe.astro";
+import FaqsAbout from "../components/about/FaqsAbout.jsx";
+
+---
+
+<Layout title="about" description="about">
+  <Hero titulo="Quienes somos" />
+  <AboutMe />
+  <FaqsAbout client:visible/>
+</Layout>
